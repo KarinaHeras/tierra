@@ -1,0 +1,64 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+body{
+	background-color: #000;
+  overflow: hidden;
+}
+
+.earth{
+  width: 30vw;
+  height: 30vw;
+  border-radius: 15vw;
+  background-color: yellow;
+  background-image: url(../img/tierra.jpg);
+  position: absolute;
+  background-size: auto 100%;
+  top: 50%;
+  left: 50%;
+  margin: -15vw 0 0 -15vw;
+  overflow: hidden ;
+  border-radius: 100% ;
+  box-shadow: 3vw 0 3vw 1vw rgba(0,0,0,1) ,
+                0   0 1vw rgba(220,235,255,1) ,
+                0   0 1vw .3vw rgba(120,165,255,.85) ;
+    
+  transform: translate(-50%,-50%) ;
+  }
+
+  
+
+
+.earth::bofore{
+    content: "";
+    position: absolute;
+    width: 300% ;
+    height: 100% ;
+    background-image: url(../img/tierra.jpg) ;
+    background-size: auto 100% ;
+    animation: rotation 30s infinite linear ;
+    }
+
+.earth::after{
+    content: "" ;
+    position: absolute ;
+    width: 300% ;
+    height: 100% ;
+    background-image:url(../img/nubes.jpg); 
+    background-size: auto 100% ;
+    animation: rotation 35s infinite linear ;
+    }
+
+    @keyframes rotation {
+
+        100% {
+            transform: translateX(-66.66%);
+        }
+}
+
+
+
+
+
+
+
+
