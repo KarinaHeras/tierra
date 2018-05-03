@@ -1,0 +1,2 @@
+# tierra
+ejercicios fictizia
